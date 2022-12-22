@@ -1,11 +1,17 @@
 const mysql= require ("mysql");
 const conexion=mysql.createConnection({
    // host:"localhost",
-   host:"sql10.freemysqlhosting.net",
-    user:"sql10584711",
-    password:"cFjV2JBe38",
-    port:"3306",
-    database:"sql10584711"
+   //host:"sql10.freemysqlhosting.net",
+   //user:"sql10584711",
+   //password:"cFjV2JBe38",
+   //port:"3306",
+   //database:"sql10584711"
+   host:"mysql-101398-0.cloudclusters.net",
+    user:"juanca",
+    password:"Coop1234+1",
+    port:"10143",
+    database:"db_basico"
+    
 });
 
 conexion.connect((error) =>{
