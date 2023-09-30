@@ -6,17 +6,24 @@ const conexion=mysql.createConnection({
    //password:"cFjV2JBe38",
    //port:"3306",
    //database:"sql10584711"
-   host:"mysql-101398-0.cloudclusters.net",
+  // host:"mysql-101398-0.cloudclusters.net",
+   // user:"juanca",
+   // password:"Coop1234+1",
+   // port:"10143",
+   // database:"db_basico"
+
+    host: "www.db4free.net/phpMyAdmin/",
     user:"juanca",
-    password:"Coop1234+1",
-    port:"10143",
-    database:"db_basico"
+    password:"484000co",
+    port:"3306",
+    database:"juancabd"
+   
     
 });
 
 conexion.connect((error) =>{
     if(error){
-        console.log("ocurrio un poblema al conectar la base de datos! ");
+        console.log(" JC ocurrio un poblema al conectar la base de datos! ");
     }
     else{
         console.log("conectado ok, a la bd");
