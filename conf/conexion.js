@@ -7,18 +7,18 @@ const conexion=mysql.createConnection({
    //port:"3306",
    //database:"sql10584711"
    
-    host:"mysql-101398-0.cloudclusters.net",
-    user:"juanca",
-    password:"Coop1234+1",
-    port:"10143",
-    database:"db_basico"
+    //host:"mysql-101398-0.cloudclusters.net",
+    //user:"juanca",
+    //password:"Coop1234+1",
+    //port:"10143",
+    //database:"db_basico"
 
     
-    //host:"db4free.net", 
-    //user:"juanca",
-    //password:"484000co",
-    //port:"3306",
-    //database:"juancabd"
+    host:"db4free.net", 
+    user:"juanca",
+    password:"484000co",
+    port:"3306",
+    database:"juancabd"
    
     
 });
