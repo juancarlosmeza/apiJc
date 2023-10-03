@@ -86,7 +86,7 @@ router.put('/:id',(req, res)=>{
     const{nombre, logo} = req.body
 
     let sql = `update tb_equipo set  nombre ='${nombre}',logo='${logo}'
-                where id_equipo = '${id}'`
+                where id = '${id}'`
     
     conexion.query(sql, (err, rows, fields)=>{
         if(err) throw err
