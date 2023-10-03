@@ -13,6 +13,7 @@ router.get("/",function(req, res){
 */
 
 //todos los equipos
+//id_equipo
 router.get("/",(req,res)=>{
 
     let sql=`select * from tb_equipo`
@@ -47,7 +48,7 @@ router.post('/',( req, res)=>{
 // get un equipo
 router.get('/:id',(req, res)=>{
     const {id} = req.params
-    let sql ='select * from tb_equipo where id_equipo = ?'
+    let sql ='select * from tb_equipo where id = ?'
     conexion.query(sql,[id],(err, rows, fields)=>{
         if(err) throw err;
         else{
@@ -61,7 +62,7 @@ router.get('/:id',(req, res)=>{
 
 router.delete("/:id",(req, res)=>{
     const{id}=req.params
-    let sql=`delete from tb_equipo where id_equipo= ${id}`  
+    let sql=`delete from tb_equipo where id= ${id}`  
     conexion.query(sql, (err,rows, fields)=>{
         if(err) {
             console.log("error");
